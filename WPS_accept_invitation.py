@@ -1,4 +1,4 @@
-invite_userids = [244668941]
+invite_userids = [725077249]
 
 import json, os, time
 import requests
@@ -42,7 +42,7 @@ print('成功邀请%d位好友'%(mk))
 SERVER_KEY = os.getenv('SERVER_KEY')
 if SERVER_KEY:
     data = {
-        'text':'WPS邀请好友任务：成功邀请到%d位好友'%(mk),
+        'text':'Github-WPS邀请好友任务：成功邀请到%d位好友'%(mk),
         'desp':'成功邀请%d位好友'%(mk)
     }
     requests.post('https://sc.ftqq.com/%s.send'%(SERVER_KEY.strip()), data = data)
