@@ -43,13 +43,13 @@ SERVER_KEY = os.getenv('SERVER_KEY')
 if SERVER_KEY:
     data = {
         'text':'Github_WPS邀请好友任务：成功邀请到%d位好友'%(mk),
-        'desp':'7个帐号成功邀请%d位好友\n记得签到打卡哟！\n--------------------\n↓↓↓↓签到页面↓↓↓↓：\nhttps://mp.weixin.qq.com/s/ESoEklsxxBF4fA9N3Pm6eQ'%(mk)
+        'desp':'8个帐号成功邀请%d位好友\n记得签到打卡哟！\n--------------------\n↓↓↓↓签到页面↓↓↓↓：\nhttps://mp.weixin.qq.com/s/ESoEklsxxBF4fA9N3Pm6eQ'%(mk)
     }
     requests.post('https://sc.ftqq.com/%s.send'%(SERVER_KEY.strip()), data = data)
 SERVER2_KEY = os.getenv('SERVER2_KEY')
 if SERVER2_KEY:
     data = {
         'text':'WPS邀请好友任务：成功邀请到%d位好友'%(mk),
-        'desp':'3个帐号成功邀请%d位好友\n记得签到打卡哟！\n--------------------\n↓↓↓↓签到页面↓↓↓↓：\nhttps://mp.weixin.qq.com/s/ESoEklsxxBF4fA9N3Pm6eQ'%(mk)
+        'desp':'8个帐号成功邀请%d位好友\n记得签到打卡哟！\n--------------------\n↓↓↓↓签到页面↓↓↓↓：\nhttps://mp.weixin.qq.com/s/ESoEklsxxBF4fA9N3Pm6eQ'%(mk)
     }
     requests.post('https://sctapi.ftqq.com/%s.send'%(SERVER2_KEY.strip()), data = data)
